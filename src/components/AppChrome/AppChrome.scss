@@ -1,0 +1,21 @@
+// Move to main.scss
+$faded-color: #777777;
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.no-bullet {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.small-text {
+  font-size: 0.8rem;
+}
+
+.faded-text {
+  color: $faded-color;
+}
