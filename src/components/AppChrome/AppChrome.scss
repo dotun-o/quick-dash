@@ -1,15 +1,9 @@
-// Move to main.scss
-$faded-color: #777777;
+@import "../../styles/variables";
 
+/* Move to main.scss */
 .flex-row {
   display: flex;
   flex-direction: row;
-}
-
-.no-bullet {
-  margin-left: 0;
-  padding-left: 0;
-  list-style: none;
 }
 
 .small-text {
@@ -17,5 +11,50 @@ $faded-color: #777777;
 }
 
 .faded-text {
-  color: $faded-color;
+  color: $color-faded;
+}
+/* Move to main.scss */
+
+.app-chrome {
+  .page-header {
+    .page-header__masthead {
+      margin-bottom: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .page-header__masthead__app-name {
+        font-size: 3rem;
+        font-weight: 900;
+      }
+
+      .page-header__masthead__app-version {
+        font-size: 1rem;
+        font-style: italic;
+        color: $color-faded;
+      }
+    }
+
+    .page-header__main-nav {
+      border-top: 1px solid $color-primary;
+      border-bottom: 1px solid $color-primary;
+      padding: 0 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      ul {
+        li {
+          border-radius: 1rem;
+          padding: 0 1rem;
+        }
+      }
+    }
+
+    .no-bullet {
+      margin-left: 0;
+      padding-left: 0;
+      list-style: none;
+    }
+  }
 }

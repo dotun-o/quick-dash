@@ -4,6 +4,7 @@ import LandingPage from "./components/LandingPage/LandingPage";
 import NewsPage from "./components/NewsPage/NewsPage";
 import WeatherPage from "./components/WeatherPage/WeatherPage";
 import StocksPage from "./components/StocksPage/StocksPage";
+import NotFoundPage from "./components/NotFoundPage/NotFoundPage";
 
 import "./App.css";
 
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/news" element={<NewsPage />} />
         <Route path="/weather" element={<WeatherPage />} />
         <Route path="/stocks" element={<StocksPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
   );
