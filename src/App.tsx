@@ -1,35 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Route, Routes } from "react-router-dom";
+import AppChrome from "./components/AppChrome/AppChrome";
+import LandingPage from "./components/LandingPage/LandingPage";
+import NewsPage from "./components/NewsPage/NewsPage";
+import WeatherPage from "./components/WeatherPage/WeatherPage";
+import StocksPage from "./components/StocksPage/StocksPage";
 
-function App() {
-  const [count, setCount] = useState(0)
+import "./App.css";
 
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <Routes>
+      <Route element={<AppChrome />}>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/news" element={<NewsPage />} />
+        <Route path="/weather" element={<WeatherPage />} />
+        <Route path="/stocks" element={<StocksPage />} />
+      </Route>
+    </Routes>
+  );
 }
 
-export default App
+export default App;
