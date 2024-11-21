@@ -1,13 +1,34 @@
+@import "./styles/variables";
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  font-size: 200rem;
 }
 
 @media screen and (min-width: 1280px) {
   #root {
     min-width: 960px;
   }
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.small-text {
+  font-size: 1rem;
+}
+
+.faded-text {
+  color: $color-faded;
+}
+
+.no-bullet {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
 }
 
 .logo {

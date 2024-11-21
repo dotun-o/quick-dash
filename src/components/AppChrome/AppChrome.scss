@@ -1,20 +1,5 @@
 @import "../../styles/variables";
 
-/* Move to main.scss */
-.flex-row {
-  display: flex;
-  flex-direction: row;
-}
-
-.small-text {
-  font-size: 0.8rem;
-}
-
-.faded-text {
-  color: $color-faded;
-}
-/* Move to main.scss */
-
 .app-chrome {
   .page-header {
     .page-header__masthead {
@@ -49,12 +34,6 @@
           padding: 0 1rem;
         }
       }
-    }
-
-    .no-bullet {
-      margin-left: 0;
-      padding-left: 0;
-      list-style: none;
     }
   }
 }

@@ -13,7 +13,9 @@ const AppChrome = () => {
   return (
     <div className="app-chrome">
       <Header version={ version } />
-      <Outlet />
+      <div className="page-content">
+        <Outlet />
+      </div>
       <Footer version={ version } author={ author } />
     </div>
   )

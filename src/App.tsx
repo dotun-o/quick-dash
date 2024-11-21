@@ -6,7 +6,7 @@ import WeatherPage from "./components/WeatherPage/WeatherPage";
 import StocksPage from "./components/StocksPage/StocksPage";
 import NotFoundPage from "./components/NotFoundPage/NotFoundPage";
 
-import "./App.css";
+import "./App.scss";
 
 const App = () => {
   return (
